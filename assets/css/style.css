@@ -1,0 +1,61 @@
+html, body{
+	padding:0px;
+	margin: 0px;
+	height: 100vh;
+	cursor: crosshair;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+}
+
+.arrange {
+	display: grid;
+	grid-template-columns: 25%25%25%25%;
+	grid-template-rows: 25%25%25%25%;
+	grid-template-areas: 
+	"a b c d"
+	"e f g h"
+	"i j k l"
+	"m n o p";
+	justify-items: center;
+	align-items: center;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.one {
+	grid-area: a;
+}
+
+.three {
+	grid-area: n;
+}
+
+.five {
+	grid-area: g;
+}
+
+.two {
+	grid-area: i;
+}
+
+.four {
+	grid-area: l;
+}
+
+.six {
+	grid-area: d;
+}
